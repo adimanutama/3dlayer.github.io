@@ -1,0 +1,91 @@
+body{
+  background-color: grey;
+}
+
+#particles-js{
+
+}
+
+.container{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.box{
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+img{
+  position: absolute;
+  top: 40px;
+  left: 75px;
+  border-radius: 30px;
+  width: 150px;
+  height: 100px;
+}
+
+h2{
+  text-align: center;
+  padding-top: 200px;
+}
+
+p{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.box:nth-child(1):hover{
+  animation: animate_1 0.5s linear 1;
+  transition-delay: 0.5s;
+  background-color: rgba(0,255,0,0.3);
+}
+
+.box:nth-child(2):hover{
+  animation: animate_2 0.5s linear 1;
+  transition-delay: 0.5s;
+  background-color: rgba(0,255,0,0.3);
+}
+
+.box:nth-child(3):hover{
+  animation: animate_3 0.5s linear 1;
+  transition-delay: 0.5s;
+  background-color: rgba(0,255,0,0.3);
+}
+
+
+@keyframes animate {
+  0%  {background-color: yellow;}
+  25%  {background-color: red;}
+  50%  {background-color: orange;}
+  75%  {background-color: green;}
+  100%  {background-color: yellow;}
+}
+
+@keyframes animate_1 {
+  0%  {top: 0px;}
+  50% {top: -50px;}
+  100%  {top: 0px;}
+}
+
+@keyframes animate_2 {
+  0%  {top: 0px;}
+  50% {top: -50px;}
+  100%  {top: 0px;}
+}
+
+@keyframes animate_3 {
+  0%  {top: 0px;}
+  50% {top: -50px;}
+  100%  {top: 0px;}
+}
